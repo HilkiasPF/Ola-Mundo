@@ -9,5 +9,7 @@ for c in data:
 print(email)
 
 w = csv.writer(open('email.csv','w'))
+w.writerow(['Nome','e-mail'])
+
 for c, n in email.items():
     w.writerow([c, n])
